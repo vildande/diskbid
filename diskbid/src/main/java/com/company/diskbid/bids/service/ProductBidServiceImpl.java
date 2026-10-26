@@ -54,9 +54,9 @@ public class ProductBidServiceImpl implements ProductBidService {
         if(productBid.getMinBidAmount().compareTo(BigDecimal.ZERO) <= 0)
             throw new RuntimeException("Min bid amount should greater than zero.");
 
-        if(productBid.getBidStep().compareTo(BigDecimal.valueOf(1000)) < 0
-            && productBid.getBidStep().compareTo(BigDecimal.valueOf(10000000)) > 0)
-            throw new RuntimeException("Bid step should be between 1000 and 10000000.");
+        if(productBid.getBidStep().compareTo(BigDecimal.ONE) < 0
+            || productBid.getBidStep().compareTo(BigDecimal.valueOf(10000)) > 0)
+            throw new RuntimeException("Bid step should be between 1 and 10000.");
 
         if(productBid.getMinutes() < 5 || productBid.getMinutes() > 4320)
             throw new RuntimeException("Minutes should be between 5 and 4320.");

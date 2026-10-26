@@ -82,27 +82,27 @@ const AddProductBidPage = () => {
     } else if (String(values.startAmount).includes(",")) {
       errors.startAmount = "Please don't use comma!";
     } else if (
-      Number(values.startAmount) < 1000 ||
-      Number(values.startAmount) > 10000000
+      Number(values.startAmount) < 1 ||
+      Number(values.startAmount) > 100000
     ) {
       errors.startAmount =
-        "Start bid amount cannot be less than 1000 and more than 10000000!!";
+        "Start bid amount must be between $1 and $100,000.";
     }
 
     if (!String(values.step).match(realNumberRegex)) {
       errors.step = "Bid step amount should be a real number!";
     } else if (String(values.step).includes(",")) {
       errors.step = "Please don't use comma!";
-    } else if (Number(values.step) < 1000 || Number(values.step) > 10000000) {
+    } else if (Number(values.step) < 1 || Number(values.step) > 10000) {
       errors.step =
-        "Step bid amount cannot be less than 1000 and more than 10000000!!";
+        "Bid step must be between $1 and $10,000.";
     }
 
     if (!String(values.minutes).match(intNumberRegex)) {
       errors.minutes = "Minutes should be an integer number!";
     } else if (Number(values.minutes) < 5 || Number(values.minutes) > 4320) {
       errors.minutes =
-        "Minutes should cannot be less than 5 and more than 4320!";
+        "Auction time must be between 5 and 4320 minutes.";
     }
 
     if (values.image == null) {
