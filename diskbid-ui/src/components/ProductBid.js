@@ -44,7 +44,7 @@ function ProductBid({ productBid }) {
             {productBid.owner}
           </td>
           <td className="text-sm px-6 py-4 whitespace-nowrap">
-            {productBid.minBidAmount} tg
+            ${productBid.minBidAmount}
           </td>
           <td className="text-sm px-6 py-4 whitespace-nowrap">
             {new Date(Date.parse(productBid.endTime)).toLocaleString()}

@@ -157,7 +157,7 @@ const ProductBidPage = () => {
                         onChange={(e) => handleChange(e)}
                         value={bidAmount}
                         className="w-96 border mt-2 px-2 py-2"
-                        placeholder="Amount in tg"
+                        placeholder="Amount in $"
                         type="text"
                       />
                       <p className="text-red-600">{bidAmountError}</p>

@@ -46,10 +46,10 @@ function ProductBidPendingAdmin({ productBid, onDelete, onAccept }) {
           </td>
 
           <td className="text-sm px-6 py-4 whitespace-nowrap">
-            {productBid.minBidAmount} tg
+            ${productBid.minBidAmount}
           </td>
           <td className="text-sm px-6 py-4 whitespace-nowrap">
-            {productBid.bidStep} tg
+            ${productBid.bidStep}
           </td>
           <td className="text-sm px-6 py-4 whitespace-nowrap">
             {productBid.minutes} minutes

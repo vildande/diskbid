@@ -81,12 +81,12 @@ const ProductBidPendingPage = () => {
               </div>
               <div className="flex items-center justify-between my-5">
                 <p className="block font-normal">Minimum Bid</p>
-                <p className="block font-normal">{bid.minBidAmount} tg</p>
+                <p className="block font-normal">${bid.minBidAmount}</p>
               </div>
 
               <div className="flex items-center justify-between my-5">
                 <p className="block font-normal">Bid Step</p>
-                <p className="block font-normal">{bid.bidStep} tg</p>
+                <p className="block font-normal">${bid.bidStep}</p>
               </div>
 
               <div className="flex items-center justify-between my-5">

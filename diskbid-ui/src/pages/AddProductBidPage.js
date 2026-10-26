@@ -175,7 +175,7 @@ const AddProductBidPage = () => {
               className="block text-gray-600 text-sm font-normal"
               htmlFor="startAmount"
             >
-              Start bid amount (in tg)
+              Start bid amount (in $)
             </label>
             <input
               name="startAmount"
@@ -193,7 +193,7 @@ const AddProductBidPage = () => {
               className="block text-gray-600 text-sm font-normal"
               htmlFor="step"
             >
-              Bid Step amount (in tg)
+              Bid Step amount (in $)
             </label>
             <input
               name="step"
