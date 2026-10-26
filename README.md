@@ -11,7 +11,7 @@ An online auction platform for vinyl records. Users list records with photos, pl
 ## Features
 
 - REST API (`/api/v1/auth`, `/api/v1/bids`, `/api/v1/feedbacks`)
-- Sign-up and login with JWT, plus role-based access (user, moderator, admin)
+- Sign-up and login with JWT, and role-based access (user, moderator, admin)
 - Auction listings with image upload (multipart) and image serving
 - Pending, active and closed auctions with bid history and results
 - User feedback
