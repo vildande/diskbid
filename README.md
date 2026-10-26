@@ -3,6 +3,19 @@
 
 An online auction platform for vinyl records. Users list records with photos, place bids, and leave feedback. Moderators and admins manage listings.
 
+
+![Active auctions](docs/screenshots/home.jpg)
+
+## Screenshots
+
+| Listing                                  | Bid history                        |
+| ---------------------------------------- | ---------------------------------- |
+| ![Listing](docs/screenshots/listing.jpg) | ![Bids](docs/screenshots/bids.jpg) |
+
+**Admin: approving pending listings**
+
+![Admin](docs/screenshots/admin.jpg)
+
 ## Tech stack
 
 - **Backend:** Java 11, Spring Boot 2.6 (Web, Data JPA, Security), JWT authentication, PostgreSQL
